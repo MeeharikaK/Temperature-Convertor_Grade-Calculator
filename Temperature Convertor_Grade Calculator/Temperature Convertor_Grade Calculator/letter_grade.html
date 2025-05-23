@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Show letter grade</title>
+	<script>
+		do {
+			var grades = prompt("Enter number grade from 0 through 100\nOr enter 999 to end entries");
+			grades = parseFloat(grades);
+			if (grades >= 88 && grades <= 100) {
+				letterGrade = 'A';
+			}
+			else if (grades >= 80 && grades <= 87) {
+				letterGrade = 'B';
+			}
+			else if (grades >= 68 && grades <= 79) {
+				letterGrade = 'C';
+			}
+			else if (grades >= 60 && grades <= 67) {
+				letterGrade = 'D';
+			}
+			else if (grades < 60) {
+				letterGrade = 'F';
+			}
+			if (grades != 999 && grades >= 0 && grades <= 100) {
+				window.alert("Number grade =" + grades + "\nLetter grade = " + letterGrade);
+			}
+		}while (grades != 999);
+
+	</script>
+</head>
+<body>
+	<main>
+		<h1>This page is displayed after the JavaScript is executed</h1>
+	</main>
+</body>
+
+</html>
